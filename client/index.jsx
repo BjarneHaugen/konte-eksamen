@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import FrontPage from "./components/frontpage";
-import Login from "./components/login";
-import NewUser from "./components/newUser";
-import PostNew from "./components/postNew";
+import { FrontPage } from "./components/frontpage";
+import { Login } from "./components/login";
+import { NewUser } from "./components/newUser";
+import { PostNew } from "./components/postNew";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
