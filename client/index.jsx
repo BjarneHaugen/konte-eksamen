@@ -1,16 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import FrontPage from "./components/frontpage";
+import Login from "./components/login";
+import NewUser from "./components/newuser";
+import PostNew from "./components/postNew";
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function App() {
-
-    
-    return (
-        <div>
-            <h1>Hello, World!</h1>
-            <p>Welcome to my React app.</p>
-        </div>
-    );
+  return (
+    <>
+      <div className="App">
+        <h1>Nyheter!</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link to={"/"}>Front page</Link>
+          </li>
+          <li>
+            <Link to={"/login"}>Login</Link>
+          </li>
+          <li>
+            <Link to={"/NewUser"}>New User</Link>
+          </li>
+          <li>
+            <Link to={"/postNew"}>Post New</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<FrontPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/NewUser" element={<NewUser />} />
+        <Route path="/postNew" element={<PostNew />} />
+      </Routes>
+    </>
+  );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
