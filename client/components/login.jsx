@@ -15,6 +15,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your login logic here
+    if (username === "correctUsername" && password === "correctPassword") {
+      // Logic for successful login
+    } else {
+      // Logic for unsuccessful login
+    }
   };
 
   return (
