@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const FrontPage = () => {
+export const FrontPage = () => {
   const [listings, setListings] = useState([]);
 
   const fetchListings = async () => {
@@ -40,5 +40,3 @@ const FrontPage = () => {
     </div>
   );
 };
-
-export default FrontPage;

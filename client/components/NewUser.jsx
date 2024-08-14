@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NewUser = () => {
+export const NewUser = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -44,5 +44,3 @@ const NewUser = () => {
     </div>
   );
 };
-
-export default NewUser;

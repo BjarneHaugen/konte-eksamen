@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const PostNew = () => {
+export const PostNew = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [error, setError] = useState(null);
@@ -48,8 +48,6 @@ const PostNew = () => {
     </form>
   );
 };
-
-export default PostNew;
 
 /*
 import React, { useState } from "react";
