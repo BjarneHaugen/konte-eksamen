@@ -23,7 +23,7 @@ function App() {
             <Link to={"/login"}>Login</Link>
           </li>
           <li>
-            <Link to={"/NewUser"}>New User</Link>
+            <Link to={"/newUser"}>New User</Link>
           </li>
           <li>
             <Link to={"/postNew"}>Post New</Link>
@@ -33,7 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<FrontPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/NewUser" element={<NewUser />} />
+        <Route path="/newUser" element={<NewUser />} />
         <Route path="/postNew" element={<PostNew />} />
       </Routes>
     </>
